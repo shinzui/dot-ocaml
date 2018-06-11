@@ -9,7 +9,7 @@ pkg.install() {
   opam install fpath yaml core utop yojson core_extended core_bench \
     cohttp
 
-  opam install merlin ocp-indent ocp-broswer
+  opam install merlin ocp-indent ocp-browser
 
   
 }
