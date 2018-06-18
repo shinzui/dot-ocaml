@@ -7,9 +7,9 @@ pkg.install() {
   brew install ocaml opam
 
   opam install fpath yaml core utop yojson core_extended core_bench \
-    cohttp
+    cohttp angstrom
 
-  opam install merlin ocp-indent ocp-browser
+  opam install merlin ocp-indent ocp-browser odig odoc
 
   
 }
