@@ -18,9 +18,10 @@ pkg.install() {
 #     git.push
 # }
 
-# pkg.pull() {
-#     git.pull
-# }
+pkg.pull() {
+  opam update
+  opam upgrade
+}
 
 # pkg.installed() {
 #     git.status
