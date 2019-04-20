@@ -9,9 +9,16 @@ pkg.install() {
   opam install fpath yaml core utop yojson core_extended core_bench \
     cohttp angstrom
 
-  opam install merlin ocp-indent ocp-browser odig odoc
+  opam install merlin ocp-indent ocp-browser odig odoc user-setup
+
+  cp opam-bin-cache.sh ~/.opam/opam-init/hooks/
 
   
+}
+
+pkg.link() {
+  #do nothing
+  echo ""
 }
 
 # pkg.push() {
@@ -21,6 +28,7 @@ pkg.install() {
 pkg.pull() {
   opam update
   opam upgrade
+  opam install user-setup
 }
 
 # pkg.installed() {
